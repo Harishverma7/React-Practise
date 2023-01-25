@@ -5,10 +5,12 @@ import { add, sub, mul, div } from "./Calc";
 import Card from "./Card";
 import Aray from "./Aray";
 import Hooks from "./Hooks";
+import EventHandling from "./EventHandling";
 
 function App() {
     return (
         <>
+            <EventHandling />
             <Hooks />
             <Time />
             <List />

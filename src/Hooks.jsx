@@ -4,6 +4,7 @@ const Hooks = () => {
     const [count, setCount] = useState(0);
     const Clicked = () => {
         setCount(count + 1);
+        console.log(count)
     };
 
     return (
