@@ -6,10 +6,12 @@ import Card from "./Card";
 import Aray from "./Aray";
 import Hooks from "./Hooks";
 import EventHandling from "./EventHandling";
+import Forms from "./Forms";
 
 function App() {
     return (
         <>
+            <Forms />
             <EventHandling />
             <Hooks />
             <Time />

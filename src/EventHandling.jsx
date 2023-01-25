@@ -33,9 +33,11 @@ const EventHandling = () => {
 
     return (
         <>
-            <button style={{ backgroundColor: bgg }} onClick={Clickk}>Event Handling {nam}</button>
-            <button style={{ backgroundColor: doublebgg }} onDoubleClick={function_dbl_click}>Event Handling {doublenam}</button>
-            <button style={{ backgroundColor: hoverbgg }} onMouseOver={function_hover}>Event Handling {hovernam}</button>
+            <div className="mb-5">
+                <button style={{ backgroundColor: bgg }} onClick={Clickk}>Event Handling {nam}</button>
+                <button style={{ backgroundColor: doublebgg }} onDoubleClick={function_dbl_click}>Event Handling {doublenam}</button>
+                <button style={{ backgroundColor: hoverbgg }} onMouseOver={function_hover}>Event Handling {hovernam}</button>
+            </div>
         </>
     )
 };
