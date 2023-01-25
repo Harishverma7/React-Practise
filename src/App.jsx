@@ -4,10 +4,12 @@ import Time from "./Time";
 import { add, sub, mul, div } from "./Calc";
 import Card from "./Card";
 import Aray from "./Aray";
+import Hooks from "./Hooks";
 
 function App() {
     return (
         <>
+            <Hooks />
             <Time />
             <List />
             <ul>
