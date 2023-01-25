@@ -10,7 +10,7 @@ const Hooks = () => {
     return (
         <>
             <h3>Clicked: {count}</h3>
-            <button onClick={Clicked}>Hooks --Change State</button>
+            <button onClick={Clicked}>Hooks --Click to Change State</button>
         </>
     )
 }

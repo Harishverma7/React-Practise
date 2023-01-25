@@ -23,19 +23,20 @@ function App() {
                 <li>{div(40, 4)}</li>
             </ul>
 
-            {Aray.map((val, index) => {
-                console.log(index);
-                return (
-
-                    <Card
-                        key={val.id}
-                        imgsrc={val.imgsrc}
-                        title={val.title}
-                        button={val.button}
-                    />
-
-                )
-            })}
+            <div style={{ backgroundColor: 'pink' }}>
+                <h3>Array Map</h3>
+                {Aray.map((val, index) => {
+                    console.log(index);
+                    return (
+                        <Card
+                            key={val.id}
+                            imgsrc={val.imgsrc}
+                            title={val.title}
+                            button={val.button}
+                        />
+                    )
+                })}
+            </div>
         </>
     );
 
