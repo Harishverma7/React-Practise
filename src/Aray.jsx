@@ -25,5 +25,5 @@ const Aray = [
         button: "Submit5",
     },
 ];
-
+console.log(Aray);
 export default Aray;
