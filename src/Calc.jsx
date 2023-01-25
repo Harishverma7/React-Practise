@@ -16,7 +16,7 @@ function mul(a, b) {
 
 function div(a, b) {
     let div = a / b;
-    return div
+    return div;
 }
 
 export { add, sub, mul, div };

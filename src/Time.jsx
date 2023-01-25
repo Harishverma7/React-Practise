@@ -1,5 +1,5 @@
 function Time() {
-    let time = new Date(2022,10,11,10).getHours();
+    let time = new Date().getHours();
     let greet = "";
     const stle = {};
 
