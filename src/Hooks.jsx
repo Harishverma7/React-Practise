@@ -8,9 +8,12 @@ const Hooks = () => {
     };
 
     return (
-        <>
+        <>  
+            <div className="bg-info py-5">
+            <h2>Hooks Practise</h2>
             <h3>Clicked: {count}</h3>
-            <button onClick={Clicked}>Hooks --Click to Change State</button>
+            <button className="btn btn-primary" onClick={Clicked}>Click to Change State</button>
+            </div>
         </>
     )
 }

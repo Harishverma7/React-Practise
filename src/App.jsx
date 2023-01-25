@@ -11,17 +11,20 @@ import Forms from "./Forms";
 function App() {
     return (
         <>
+            <List />
             <Forms />
             <EventHandling />
             <Hooks />
             <Time />
-            <List />
+            <div style={{ backgroundColor: 'grey' }}>
+            <h3>Calculation with 40 and 4</h3>
             <ul>
-                <li>{add(40, 4)}</li>
-                <li>{sub(40, 4)}</li>
-                <li>{mul(40, 4)}</li>
-                <li>{div(40, 4)}</li>
+                <li>Addition: {add(40, 4)}</li>
+                <li>Subtraction: {sub(40, 4)}</li>
+                <li>Multiplication: {mul(40, 4)}</li>
+                <li>Division: {div(40, 4)}</li>
             </ul>
+            </div>
 
             <div style={{ backgroundColor: 'pink' }}>
                 <h3>Array Map</h3>

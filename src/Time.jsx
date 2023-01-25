@@ -20,7 +20,7 @@ function Time() {
 
     return (
         <>
-            <div>
+            <div className="py-5 bg-danger">
                 <h1>
                     Hello, <span style={stle}>{greet}</span>
                 </h1>
