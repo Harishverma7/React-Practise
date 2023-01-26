@@ -16,9 +16,9 @@ function App() {
             <EventHandling />
             <Hooks />
             <Time />
-            <div style={{ backgroundColor: 'grey' }}>
+            <div className='py-4' style={{ backgroundColor: 'grey' }}>
             <h3>Calculation with 40 and 4</h3>
-            <ul>
+            <ul className='m-0'>
                 <li>Addition: {add(40, 4)}</li>
                 <li>Subtraction: {sub(40, 4)}</li>
                 <li>Multiplication: {mul(40, 4)}</li>
@@ -26,7 +26,7 @@ function App() {
             </ul>
             </div>
 
-            <div style={{ backgroundColor: 'pink' }}>
+            <div class="py-3" style={{ backgroundColor: 'pink' }}>
                 <h3>Array Map</h3>
                 {Aray.map((val, index) => {
                     console.log(index);

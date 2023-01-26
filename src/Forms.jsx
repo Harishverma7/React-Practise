@@ -17,9 +17,10 @@ const Form = () => {
     return (
         <>
             <div className="bg-warning pb-4">
-            <h2>Hello,{name}</h2>
+            <h2>Forms</h2>
+            <h1>Hello,{name}</h1>
             <input type="text" value={nam} placeholder="Enter Your Name" onChange={inputEvent}></input>
-            <button onClick={onsubmit}>Submit</button>
+            <button className="btn btn-primary" onClick={onsubmit}>Submit</button>
             </div>
         </>
     );

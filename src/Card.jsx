@@ -3,7 +3,7 @@ function Card(props) {
         <>
             <h1>{props.title}</h1>
             <img alt="sdds" src={props.imgsrc}></img>
-            <button>{props.button}</button>
+            <button className="btn-primary btn">{props.button}</button>
         </>
     );
 }
