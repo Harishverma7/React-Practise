@@ -26,7 +26,7 @@ function App() {
             </ul>
             </div>
 
-            <div class="py-3" style={{ backgroundColor: 'pink' }}>
+            <div className="py-3" style={{ backgroundColor: 'pink' }}>
                 <h3>Array Map</h3>
                 {Aray.map((val, index) => {
                     console.log(index);
