@@ -3,13 +3,13 @@ import React, { useState } from "react";
 
 const Form = () => {
     const [fullname, setFullName] = useState({
-        fname:'',
-        lname:'',
+        fname: '',
+        lname: '',
     });
 
-    const [newfullname,newsetfullname] = useState({
-        fname:'',
-        lanme:'',
+    const [newfullname, newsetfullname] = useState({
+        fname: '',
+        lanme: '',
     });
 
     const inputEvent = (e) => {
@@ -18,15 +18,15 @@ const Form = () => {
         const name = e.target.name;
         setFullName((preValue) => {
             // console.log(preValue);
-            if(name === 'fname'){
+            if (name === 'fname') {
                 return {
                     fname: value,
                     lname: preValue.lname,
                 };
-            }else if (name === 'lname'){
-                return{
-                    fname : preValue.fname,
-                    lname : value,
+            } else if (name === 'lname') {
+                return {
+                    fname: preValue.fname,
+                    lname: value,
                 };
             }
         })
@@ -35,24 +35,33 @@ const Form = () => {
 
 
     const onsubmit = () => {
-        
-newsetfullname({
-    fname:fullname.fname,
-    lanme:fullname.lname,
-})
+        newsetfullname({
+            fname: fullname.fname,
+            lanme: fullname.lname,
+        })
     };
 
     return (
         <>
             <div className="bg-warning pb-4">
-            <h2>Form/Previous Value</h2>
-            <h1>Hello,{newfullname.fname}{newfullname.lanme}</h1>
-            <input type="text" value={fullname.fname} placeholder="Enter Your First Name" name="fname" onChange={inputEvent}></input>
-            <input type="text" value={fullname.lname} placeholder="Enter Your Last Name" name="lname" onChange={inputEvent}></input>
-            <button className="btn btn-primary" onClick={onsubmit}>Submit</button>
+                <h2>Form/Previous Value</h2>
+                <h1>Hello,{newfullname.fname}{newfullname.lanme}</h1>
+                <input type="text" value={fullname.fname} placeholder="Enter Your First Name" name="fname" onChange={inputEvent}></input>
+                <input type="text" value={fullname.lname} placeholder="Enter Your Last Name" name="lname" onChange={inputEvent}></input>
+                <button className="btn btn-primary" onClick={onsubmit}>Submit</button>
             </div>
         </>
     );
 };
+
+
+
+//Spread operator
+
+const nname= ['harsh', 'verma'];
+const newname=[1, ...nname , 26 , 'hello'];
+console.log(newname);
+
+// Spread Operator
 
 export default Form;
