@@ -7,12 +7,14 @@ import Aray from "./Aray";
 import Hooks from "./Hooks";
 import EventHandling from "./EventHandling";
 import Forms from "./Forms";
+import NewForm from './New-Form';
 
 function App() {
     return (
         <>
             <List />
             <Forms />
+            <NewForm />
             <EventHandling />
             <Hooks />
             <Time />

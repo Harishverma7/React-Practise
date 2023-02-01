@@ -44,7 +44,7 @@ const Form = () => {
     return (
         <>
             <div className="bg-warning pb-4">
-                <h2>Form/Previous Value</h2>
+                <h2>Form</h2>
                 <h1>Hello,{newfullname.fname}{newfullname.lanme}</h1>
                 <input type="text" value={fullname.fname} placeholder="Enter Your First Name" name="fname" onChange={inputEvent}></input>
                 <input type="text" value={fullname.lname} placeholder="Enter Your Last Name" name="lname" onChange={inputEvent}></input>
