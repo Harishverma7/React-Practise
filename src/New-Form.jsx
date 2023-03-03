@@ -12,9 +12,7 @@ const NewForm = () => {
     });
 
 const inputEvent = (e) => {
-    console.log(e.target.value);
     const {name, value} =e.target;
-
     setName((preValue) =>{
         return{
             ...preValue,
