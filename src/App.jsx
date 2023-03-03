@@ -8,6 +8,7 @@ import Hooks from "./Hooks";
 import EventHandling from "./EventHandling";
 import Forms from "./Forms";
 import NewForm from './New-Form';
+import Api from './Api';
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
             <EventHandling />
             <Hooks />
             <Time />
+            
             <div className='py-4' style={{ backgroundColor: 'grey' }}>
             <h3>Calculation with 40 and 4</h3>
             <ul className='m-0'>
@@ -42,6 +44,7 @@ function App() {
                     )
                 })}
             </div>
+            <Api />
         </>
     );
 
